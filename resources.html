@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources — Olympiad Global Talent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main>
+
+  <!-- ══ RESOURCE LIBRARY ══ -->
+  <section style="background:var(--beige)">
+    <div class="container">
+      <p class="section-label">Resource Library</p>
+      <h2 class="section-title">Guides, Tools & Media</h2>
+      <p class="section-sub">Curated materials to help you prepare, research, and apply with confidence.</p>
+
+      <div class="resource-tabs">
+        <button class="tab-btn active" onclick="filterResources('all',this)">All Resources</button>
+        <button class="tab-btn" onclick="filterResources('pdf',this)">📄 Guides & PDFs</button>
+        <button class="tab-btn" onclick="filterResources('video',this)">🎬 Videos</button>
+        <button class="tab-btn" onclick="filterResources('image',this)">🖼️ Offer Letters</button>
+        <button class="tab-btn" onclick="filterResources('event',this)">📅 Deadlines</button>
+      </div>
+
+      <div class="resource-grid" id="resource-grid">
+
+        <!-- PDFs -->
+        <div class="resource-item" data-type="pdf"><div class="resource-icon">📄</div><div class="resource-name">US College Application Guide 2025</div><div class="resource-meta">PDF · Upload ready</div></div>
+        <div class="resource-item" data-type="pdf"><div class="resource-icon">📄</div><div class="resource-name">How to Write a Winning Common App Essay</div><div class="resource-meta">PDF · Upload ready</div></div>
+        <div class="resource-item" data-type="pdf"><div class="resource-icon">📄</div><div class="resource-name">UK UCAS Application Walkthrough</div><div class="resource-meta">PDF · Upload ready</div></div>
+        <div class="resource-item" data-type="pdf"><div class="resource-icon">📄</div><div class="resource-name">Career Orientation: Finance & Banking</div><div class="resource-meta">PDF · Upload ready</div></div>
+        <div class="resource-item" data-type="pdf"><div class="resource-icon">📄</div><div class="resource-name">Scholarship Search Handbook</div><div class="resource-meta">PDF · Upload ready</div></div>
+        <div class="resource-upload resource-item" data-type="pdf"><div class="upload-icon">⬆️</div><span>Upload PDF / Guide</span></div>
+
+        <!-- Videos -->
+        <div class="resource-item" data-type="video"><div class="resource-icon">🎬</div><div class="resource-name">Welcome & Program Overview</div><div class="resource-meta">Video · Upload ready</div></div>
+        <div class="resource-item" data-type="video"><div class="resource-icon">🎬</div><div class="resource-name">Writing Your Personal Statement — Masterclass</div><div class="resource-meta">Video · Upload ready</div></div>
+        <div class="resource-item" data-type="video"><div class="resource-icon">🎬</div><div class="resource-name">Career Orientation: Breaking into Finance</div><div class="resource-meta">Video · Upload ready</div></div>
+        <div class="resource-upload resource-item" data-type="video"><div class="upload-icon">⬆️</div><span>Upload Video / Webinar</span></div>
+
+        <!-- Offer Letters -->
+        <div class="resource-item" data-type="image"><div class="resource-icon">🖼️</div><div class="resource-name">Offer Letter — Harvard University</div><div class="resource-meta">PNG / JPG · Upload ready</div></div>
+        <div class="resource-item" data-type="image"><div class="resource-icon">🖼️</div><div class="resource-name">Offer Letter — University of Oxford</div><div class="resource-meta">PNG / JPG · Upload ready</div></div>
+        <div class="resource-item" data-type="image"><div class="resource-icon">🖼️</div><div class="resource-name">Offer Letter — MIT</div><div class="resource-meta">PNG / JPG · Upload ready</div></div>
+        <div class="resource-item" data-type="image"><div class="resource-icon">🖼️</div><div class="resource-name">Offer Letter — Wharton School</div><div class="resource-meta">PNG / JPG · Upload ready</div></div>
+        <div class="resource-upload resource-item" data-type="image"><div class="upload-icon">⬆️</div><span>Upload Offer Letter Screenshot</span></div>
+
+        <!-- Events -->
+        <div class="resource-item" data-type="event"><div class="resource-icon">📅</div><div class="resource-name">2025–26 Application Deadlines Calendar</div><div class="resource-meta">Schedule · Upload ready</div></div>
+        <div class="resource-item" data-type="event"><div class="resource-icon">📅</div><div class="resource-name">Webinar & Workshop Schedule</div><div class="resource-meta">Schedule · Upload ready</div></div>
+        <div class="resource-upload resource-item" data-type="event"><div class="upload-icon">⬆️</div><span>Upload Deadline / Schedule</span></div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
