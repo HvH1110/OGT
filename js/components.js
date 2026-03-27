@@ -37,7 +37,7 @@ const FOOTER_HTML = `
         <span class="logo-main">Olympiad Global Talent</span>
         <span class="logo-sub">College Consulting · Career Orientation</span>
       </div>
-      <p>Helping ambitious students worldwide gain admission to the world's top universities and launch exceptional careers — since 2012.</p>
+      <p>Helping ambitious students worldwide gain admission to the world's top universities and launch exceptional careers.</p>
     </div>
     <div class="footer-col">
       <h5>Services</h5>
